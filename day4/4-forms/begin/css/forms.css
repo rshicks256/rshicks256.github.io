@@ -1,0 +1,390 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  .wrapper {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1em;
+      display: flex;
+      flex-flow: row nowrap;
+  }
+  p {
+      margin-bottom: 0;
+      margin-top: 2rem;
+  }
+  section {
+      flex-basis: 57%;
+      margin-right: 10%;
+  }
+  aside {
+      flex-basis: 33%;
+  }
+
+  #ryan { 
+
+  }
+  /*
+/ Description: Master CSS Style Sheet for 256 Technology
+/ Created: 10/30/2018
+/ By: Ryan Hicks
+/ Last Updated: 10/30/2018
+/ By: Ryan Hicks
+
+/ ---------->>> INDEX <<<---------- /
+
+Color Reference Library
+Class Reference Library
+Selector Sepcificity
+Accessability
+Handy Notes
+Body
+    Header
+        Heading
+        Navigation
+    Main
+        Section
+        Division
+        Article
+        Paragraph
+        Quote
+        Blockqoute
+        Citation
+        Hyperlink
+            Link
+            Visited
+            Hover
+        Ordered List
+        Unordered List
+        Image
+        Button
+    Footer
+    Formatting
+
+/ ---------->>> COLOR REFERENCE LIBRARY <<<---------- /
+
+/ background: #000;
+/ normal text: #fff;
+/ links:
+/ headings: #fff;
+/ main content bg: #000;
+
+/ ---------->>> CLASS REFERENCE LIBRARY <<<---------- /
+
+/ .leftheader
+/ .rightheader
+/ .center
+/ .floatleft
+/ .floatright
+/ .wrapper
+/ .footer-social
+
+/ ---------->>> SELECTOR SPECIFICITY  <<<---------- /
+
+/ ID [#id] > Class [.class] > Type [e.g. header]
+
+/ ---------->>> HANDY NOTES <<<---------- /
+
+em - The value of 1 em is relative to the font-size of the direct parent. Often used in media-queries, em is great for responsiveness, but it can get really confusing tracing back the exchange rate of ems to pixels for each element (1.25em of 1.4em of 16px = ?).
+
+rem - Relative to the font-size of the <html> element, rem makes it really easy to scale all headings and paragraphs on the page. Leaving the <html> with it's default fontsize and setting everything else with rem is a great approach accessibility-wise.
+
+px - Pixels give you the most precision but don't offer any scaling when used in responsive designs. They are reliable, easy to understand, and present a good visual connection between value and actual result (15px is close, maybe just a pixel or two more).
+
+/*
+
+/* ---------->>> ACCESSABILITY <<<---------- */
+
+
+
+/* ---------->>> BODY <<<---------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    background-image: url(../img/galaxy.jpg);
+    color: #fff;
+}
+
+/* ---------->>> HEADER <<<---------- */
+
+header {
+
+}
+
+.leftheader {
+
+}
+
+.rightheader {
+
+}
+
+/* ---------->>> HEADING <<<---------- */
+
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h6 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ---------->>> NAVIGATION <<<---------- */
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: .4em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-top: .2em solid #fff;
+    border-bottom: .2em solid #fff;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-align: center;
+    text-transform: uppercase;
+    border-top: .2em solid #fff;
+    border-bottom: .2em solid #fff;
+    border-left: .2em solid #fff;
+    border-right: .2em solid #fff;
+    padding-top: .432em;
+    padding-bottom: .432em;
+    padding-left: .666em;
+    padding-right: .666em;
+    color: #fff;
+    background-color: #000;
+}
+
+nav a:active {
+    color: #fff;
+    background-color: #000;
+}
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+    border-top: .2em solid #000;
+    border-bottom: .2em solid #000;
+    border-left: .2em solid #000;
+    border-right: .2em solid #000;
+    font-weight: bold;
+
+}
+
+/* ---------->>> MAIN <<<---------- */
+
+main {
+    color: #fff;
+    background-color: #000;
+}
+
+/* ---------->>> SECTION <<<---------- */
+
+section {
+    text-transform: uppercase;
+}
+
+/* ---------->>> DIVISION <<<---------- */
+
+div {
+    color: #fff;
+    background-color: #000;
+}
+
+/* ---------->>> ARTICLE <<<---------- */
+
+/* ---------->>> PARAGRAPH <<<---------- */
+
+p [for="abtype"] {
+    color: #fff;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+/* ---------->>> QUOTE <<<---------- */
+
+q {
+    color: #fff;
+}
+
+/* ---------->>> BLOCKQOUTE <<<---------- */
+
+blockquote {
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ---------->>> CITATION <<<---------- */
+
+cite {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* ---------->>> HYPERLINK <<<---------- */
+
+a {
+    background-color: #000;
+    text-decoration: none;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #0021CC;
+}
+
+/* ---------->>> ORDERED LIST <<<---------- */
+
+ol {
+    list-style-type: square;
+}
+
+/* ---------->>> UNORDERED LIST <<<---------- */
+
+ul {
+    list-style-type: square;
+}
+
+/* ---------->>> IMAGE <<<---------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px; 
+    border-color: #fff;  
+}
+
+/* ---------->>> BUTTON <<<---------- */
+
+button {
+
+}
+
+/* ---------->>> FOOTER <<<---------- */
+
+footer {
+    position: fixed;
+    padding: .25rem 0rem .25rem 0rem;
+    text-align: center;
+    font-size: .75rem;
+    border-top: .1em solid #fff;
+    border-bottom: .1em solid #fff;
+    width: 100%;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+footer li {
+
+}
+
+.footer-social {
+    display: inline-block;
+    position: center;
+    width: 20px; 
+    height: 20px; 
+    margin: 0 5px;
+}
+
+/* ---------->>> FORMATTING <<<---------- */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.floatleft {
+    float: left;
+    /* TRouBLe*/
+    margin: 0em 1em 1em 0em;
+}
+
+.floatright {
+    float: right;
+    /* TRouBLe*/
+    margin: 0em 1em 1em 0em;
+}
+
+.wrapper {
+    position: 0 auto;
+    background-color: #000;
+}
+
+/* ---------->>> FIELDSET <<<---------- */
+
+fieldset {
+
+}
+
+/* ---------->>> LEGEND <<<---------- */
+
+legend {
+    font-weight: bold;
+    margin: 1 1 1 1;
+}
+
+form {
+
+}
+
+button {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.5em;
+    margin: 2rem 0;
+    padding: 12px 12px 12px 12px;
+    position: center;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    height: 10rem;
+    padding: 1rem;
+}
+
+select {
+    font-size: 1rem;
+}
+
+input:not([type="radio"]) {
+    display: block;
+    margin-bottom: 2rem;
+    width: 20rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
