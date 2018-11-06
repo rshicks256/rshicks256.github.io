@@ -1,0 +1,396 @@
+/*
+/ Description: Master CSS Style Sheet for 256 Technology
+/ Created: 10/30/2018
+/ By: Ryan Hicks
+/ Last Updated: 11/2/2018
+/ By: Ryan Hicks
+
+/ ---------->>> INDEX <<<---------- /
+
+Color Reference Library
+Class Reference Library
+Selector Sepcificity
+Accessability
+Handy Notes
+Body
+    Header
+        Heading
+        Navigation
+    Main
+        Section
+        Division
+        Article
+        Form
+        Paragraph
+        Quote
+        Blockqoute
+        Citation
+        Hyperlink
+            Link
+            Visited
+            Hover
+        Ordered List
+        Unordered List
+        Iframe
+        Image
+        Button
+    Footer
+Formatting
+
+/ ---------->>> COLOR REFERENCE LIBRARY <<<---------- /
+
+/ background: #000;
+/ text: #fff;
+
+/ ---------->>> CLASS REFERENCE LIBRARY <<<---------- /
+
+/ .leftheader
+/ .rightheader
+/ .footer-social
+/ .center
+/ .floatleft
+/ .floatright
+/ .wrapper
+/ .cinzel
+
+/ ---------->>> SELECTOR SPECIFICITY  <<<---------- /
+
+/ ID [#id] > Class [.class] > Type [e.g. header]
+
+/ ---------->>> HANDY NOTES <<<---------- /
+
+em - The value of 1 em is relative to the font-size of the direct parent. Often used in media-queries, em is great for responsiveness, but it can get really confusing tracing back the exchange rate of ems to pixels for each element (1.25em of 1.4em of 16px = ?).
+
+rem - Relative to the font-size of the <html> element, rem makes it really easy to scale all headings and paragraphs on the page. Leaving the <html> with it's default fontsize and setting everything else with rem is a great approach accessibility-wise.
+
+px - Pixels give you the most precision but don't offer any scaling when used in responsive designs. They are reliable, easy to understand, and present a good visual connection between value and actual result (15px is close, maybe just a pixel or two more).
+
+/*
+
+/* ---------->>> ACCESSIBILITY <<<---------- */
+
+/* ---------->>> BODY <<<---------- */
+
+body {
+    font-family: "Cinzel", Helvetica, sans-serif;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+/* ---------->>> HEADER <<<---------- */
+ 
+header {
+    padding-top: 30px;
+    width: 100%
+}
+
+/* ---------->>> HEADING <<<---------- */
+
+h1 {
+    padding-bottom: .5em;
+    border-bottom: .05em solid #fff;
+    text-align: center;
+}
+
+h2,
+h3, 
+h4, 
+h5, 
+h6 {
+    text-align: center;
+    color: #fff;
+}
+
+.h3-underline {
+    padding: .5em;
+    border-bottom: solid .05em #fff;
+    border-top: solid .05em #fff;
+}
+
+/* ---------->>> NAVIGATION <<<---------- */
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: .4em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-top: .05em solid #fff;
+    border-bottom: .05em solid #fff;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-align: center;
+    text-transform: uppercase;
+    border-top: .15em solid #fff;
+    border-bottom: .15em solid #fff;
+    border-left: .15em solid #fff;
+    border-right: .15em solid #fff;
+    padding-top: .432em;
+    padding-bottom: .432em;
+    padding-left: .666em;
+    padding-right: .666em;
+    color: #fff;
+    background-color: #000;
+}
+
+nav a:active {
+    color: #fff;
+    background-color: #000;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+    border: .1em solid #000;
+    font-weight: bold;
+}
+
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+/* ---------->>> MAIN <<<---------- */
+
+main {
+    color: #fff;
+    background-color: #000;
+    padding-bottom: 60px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------->>> SECTION <<<---------- */
+
+/* ---------->>> DIVISION <<<---------- */
+
+div {
+    color: #fff;
+    background-color: #000;
+}
+
+.div-rotate {
+    transform: rotate(90deg); 
+}
+
+/* ---------->>> ARTICLE <<<---------- */
+
+/* ---------->>> FORM <<<---------- */
+
+input {
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+}
+
+/* ---------->>> PARAGRAPH <<<---------- */
+
+p {
+    color: #fff;
+}
+
+/* ---------->>> QUOTE <<<---------- */
+
+q {
+    color: #fff;
+}
+
+/* ---------->>> BLOCKQOUTE <<<---------- */
+
+blockquote {
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ---------->>> CITATION <<<---------- */
+
+cite {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* ---------->>> HYPERLINK <<<---------- */
+
+a {
+    background-color: #000;
+    text-decoration: none;
+}
+
+a:link {
+    color: #fff;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #0021CC;
+}
+
+/* ---------->>> ORDERED LIST <<<---------- */
+
+/* ---------->>> UNORDERED LIST <<<---------- */
+
+ul {
+    list-style-type: none;
+}
+
+.ul-center {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.li-center {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin-left: -.5em;
+    margin-right: 2em;
+    display: inline-block;
+}
+
+.li-underline {
+    padding: .5em;
+    border-bottom: solid .05em #fff;
+    border-top: solid .05em #fff;
+}
+
+/* ---------->>> IFRAME <<<---------- */
+
+iframe {
+    border: 2px solid white; 
+}
+
+/* ---------->>> IMAGE <<<---------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-home {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.img-team {
+    max-width: 50%;
+    height: auto;
+    border: .05em solid white; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-border {
+    border: .05em solid white; 
+}
+
+/* ---------->>> BUTTON <<<---------- */
+
+.submit {
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    height: 3em;
+    font-family: "Cinzel", Helvetica, sans-serif;
+}
+
+/* ---------->>> FOOTER <<<---------- */
+
+footer {
+    padding: .25rem 0rem .25rem 0rem;
+    text-align: center;
+    font-size: .75rem;
+    border-top: .05em solid #fff;
+    border-bottom: .05em solid #fff;
+    width: 100%;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.footer-social {
+    display: inline-block;
+    position: right;
+    width: 18px; 
+    height: 18px; 
+    margin: 6px 6px;
+    border: .05em solid white; 
+    padding: .1em;
+}
+
+.footer-sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    border: .05em 0 solid white; 
+}
+
+/* ---------->>> FORMATTING <<<---------- */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.floatleft {
+    float: left;
+    /* TRouBLe*/
+    margin: 0em 1em 1em 0em;
+}
+
+.floatright {
+    float: right;
+    /* TRouBLe*/
+    margin: 0em 1em 1em 0em;
+}
+
+.wrapper {
+    position: 0 auto;
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif;
+    font-family: 'Cuprum', sans-serif;
+}
