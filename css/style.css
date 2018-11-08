@@ -77,6 +77,10 @@ body {
     background-color: #000;
     color: #fff;
     position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* ---------->>> HEADER <<<---------- */
