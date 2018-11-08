@@ -189,6 +189,14 @@ div {
     transform: rotate(90deg); 
 }
 
+.character {
+    display: none;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+}
+
 /* ---------->>> ARTICLE <<<---------- */
 
 /* ---------->>> FORM <<<---------- */
@@ -317,6 +325,26 @@ img {
     border: .05em solid white; 
 }
 
+.img-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    display: none;
+    max-height: 400px;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: .05em solid white; 
+}
+
+.active {
+    display: block;
+  }
+
 /* ---------->>> BUTTON (SUBMIT) <<<---------- */
 
 .submit {
@@ -332,6 +360,32 @@ img {
 }
 
 /* ---------->>> BUTTON (DROPDOWN) <<<---------- */
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-color: #fff;
+    cursor: pointer;
+  }
+
+.prev {
+    margin-right: 15px;
+}
+
+.btn:disabled {
+    background-color: #808080;
+    cursor: not-allowed;
+  }
+
 
 /*
 .dropbtn {
@@ -414,6 +468,9 @@ footer ul {
 
 /* ---------->>> FORMATTING <<<---------- */
 
+* {
+    box-sizing: border-box;
+}
 .center {
     display: block;
     margin-left: auto;
