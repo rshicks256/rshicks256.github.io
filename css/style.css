@@ -9,7 +9,7 @@
 
 Color Reference Library
 Class Reference Library
-Selector Sepcificity
+Selector Specificity
 Accessability
 Handy Notes
 Body
@@ -44,15 +44,6 @@ Formatting
 
 / ---------->>> CLASS REFERENCE LIBRARY <<<---------- /
 
-/ .leftheader
-/ .rightheader
-/ .footer-social
-/ .center
-/ .floatleft
-/ .floatright
-/ .wrapper
-/ .cinzel
-
 / ---------->>> SELECTOR SPECIFICITY  <<<---------- /
 
 / ID [#id] > Class [.class] > Type [e.g. header]
@@ -79,12 +70,13 @@ body {
     position: relative;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: .5em;
+    padding-right: .5em;
+    text-align: left;
 }
 
 /* ---------->>> HEADER <<<---------- */
- 
+
 header {
     padding-top: 30px;
     width: 100%
@@ -347,7 +339,7 @@ img {
 
 .active {
     display: block;
-  }
+}
 
 /* ---------->>> BUTTON (SUBMIT) <<<---------- */
 
@@ -370,7 +362,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .btn {
     background-color: #000;
@@ -379,7 +371,7 @@ img {
     padding: 5px 20px;
     border-color: #fff;
     cursor: pointer;
-  }
+}
 
 .prev {
     margin-right: 15px;
@@ -388,7 +380,7 @@ img {
 .btn:disabled {
     background-color: #808080;
     cursor: not-allowed;
-  }
+}
 
 
 /*
@@ -483,6 +475,10 @@ footer ul {
 
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .floatleft {
